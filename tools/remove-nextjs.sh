@@ -9,3 +9,4 @@ trap "exit" INT
 # Reason: Trick Vercel into thinking that we are not using Next.js. All we want is to reproduce the generic CI
 # environment and don't care about Vercel's integrations with Next.js.
 sed -i.bak '/"next":/d' package.json
+rm next.config.js
